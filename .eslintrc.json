@@ -29,7 +29,7 @@
               "tabWidth": 2,
               "printWidth": 100,
               "trailingComma": "none",
-              "jsxBracketSameLine": true,
+              "jsxBracketSameLine": false,
               "space-before-function-paren": "always"
             }
           ]
