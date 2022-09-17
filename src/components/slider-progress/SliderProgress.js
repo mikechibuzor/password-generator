@@ -5,7 +5,7 @@ import { useState } from 'react';
 const ProgressSlider = styled(Slider, {
   shouldForwardProp: (prop) => prop !== 'colorClass',
 })(({ colorClass, theme }) => ({
-  color: colorClass ? 'rgb(134 239 172)' : 'white',
+  color: colorClass ? 'rgb(134 239 173)' : 'white',
   '& .MuiSlider-rail': {
     color: 'rgb(0,0,0)',
   },
