@@ -2,22 +2,26 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 
-const CheckBoxes = ({ setPasswordStrengthCounter, passwordStrengthCounter }) => {
+const CheckBoxes = ({
+  setPasswordStrengthCounter,
+  passwordStrengthCounter,
+}) => {
   const toggleCheckbox = (event) => {
-   if(event.target.checked){
-    passwordStrengthCounter++
-    setPasswordStrengthCounter(passwordStrengthCounter)
-   }else{
-    passwordStrengthCounter--
-    setPasswordStrengthCounter(passwordStrengthCounter)
-   }
-  }
+    if (event.target.checked) {
+      passwordStrengthCounter++;
+      setPasswordStrengthCounter(passwordStrengthCounter);
+    } else {
+      passwordStrengthCounter--;
+      setPasswordStrengthCounter(passwordStrengthCounter);
+    }
+  };
   return (
     <>
       <FormGroup className='text-gray-300 w-full mt-2'>
         <FormControlLabel
           control={
-            <Checkbox onChange={toggleCheckbox}
+            <Checkbox
+              onChange={toggleCheckbox}
               sx={{
                 color: 'rgb(209 213 219)',
                 '&.Mui-checked': {
@@ -30,7 +34,8 @@ const CheckBoxes = ({ setPasswordStrengthCounter, passwordStrengthCounter }) => 
         />
         <FormControlLabel
           control={
-            <Checkbox onChange={toggleCheckbox}
+            <Checkbox
+              onChange={toggleCheckbox}
               sx={{
                 color: 'rgb(209 213 219)',
                 '&.Mui-checked': {
@@ -43,7 +48,8 @@ const CheckBoxes = ({ setPasswordStrengthCounter, passwordStrengthCounter }) => 
         />
         <FormControlLabel
           control={
-            <Checkbox onChange={toggleCheckbox}
+            <Checkbox
+              onChange={toggleCheckbox}
               sx={{
                 color: 'rgb(209 213 219)',
                 '&.Mui-checked': {
@@ -56,7 +62,8 @@ const CheckBoxes = ({ setPasswordStrengthCounter, passwordStrengthCounter }) => 
         />
         <FormControlLabel
           control={
-            <Checkbox onChange={toggleCheckbox}
+            <Checkbox
+              onChange={toggleCheckbox}
               sx={{
                 color: 'rgb(209 213 219)',
                 '&.Mui-checked': {
