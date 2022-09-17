@@ -1,7 +1,7 @@
-import Slider from '@mui/material/Slider';
-import { alpha, styled } from '@mui/material/styles';
-import { useState } from 'react';
-import { PropTypes } from 'prop-types';
+import Slider from '@mui/material/Slider'
+import { alpha, styled } from '@mui/material/styles'
+import { useState } from 'react'
+import { PropTypes } from 'prop-types'
 
 const ProgressSlider = styled(Slider, {
   shouldForwardProp: (prop) => prop !== 'colorClass',
@@ -19,14 +19,14 @@ const ProgressSlider = styled(Slider, {
       color: 'black',
     },
   },
-}));
+}))
 
 const SliderProgress = ({ setCharacterLength, defaultValue }) => {
-  const [newVal, setNewVal] = useState();
+  const [newVal, setNewVal] = useState()
   const handleChange = (event) => {
-    setNewVal(event.target.value);
-    setCharacterLength(newVal);
-  };
+    setNewVal(event.target.value)
+    setCharacterLength(newVal)
+  }
   return (
     <div className="w-full px-2 mt-2">
       <ProgressSlider
@@ -36,10 +36,10 @@ const SliderProgress = ({ setCharacterLength, defaultValue }) => {
         colorClass={newVal}
       />
     </div>
-  );
-};
+  )
+}
 SliderProgress.propTypes = {
   setCharacterLength: PropTypes.number,
   defaultValue: PropTypes.number,
-};
-export default SliderProgress;
+}
+export default SliderProgress
