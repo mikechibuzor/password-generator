@@ -1,15 +1,15 @@
-import { useState } from "react";
-import SliderProgress from "../slider-progress/SliderProgress";
-import CopyPassword from "../copy-password/CopyPassword";
-import CheckBoxes from "../check-boxes/CheckBoxes";
-import PasswordStrength from "../password-strength/PasswordStrengh";
-import ArrowRight from "../../assets/icons/ArrowRight";
-import LoadingButton from "@mui/lab/LoadingButton";
-import { ALPHA_NUMERRIC_SYMBOL } from "../../utils/constants";
+import { useState } from 'react';
+import SliderProgress from '../slider-progress/SliderProgress';
+import CopyPassword from '../copy-password/CopyPassword';
+import CheckBoxes from '../check-boxes/CheckBoxes';
+import PasswordStrength from '../password-strength/PasswordStrengh';
+import ArrowRight from '../../assets/icons/ArrowRight';
+import LoadingButton from '@mui/lab/LoadingButton';
+import { ALPHA_NUMERRIC_SYMBOL } from '../../utils/constants';
 
 const GeneratePassword = () => {
   const defaultCharacterLength = 0;
-  const [generatedPassword, setGeneratedPassword] = useState("");
+  const [generatedPassword, setGeneratedPassword] = useState('');
   const [characterLength, setCharacterLength] = useState(
     defaultCharacterLength
   );
@@ -19,13 +19,13 @@ const GeneratePassword = () => {
   const generateHandler = () => {
     setGeneratedPassword(
       new Array(characterLength)
-        .fill("")
+        .fill('')
         .map(() => {
           const character =
             ALPHA_NUMERRIC_SYMBOL[Math.floor(Math.random() * 95)];
           return [character];
         })
-        .join("")
+        .join('')
     );
   };
 
@@ -56,14 +56,14 @@ const GeneratePassword = () => {
           onClick={generateHandler}
           className="flex items-center justify-center gap-x-3 bg-green-300 px-4 py-4 w-full mt-10 font-semibold"
           sx={{
-            backgroundColor: "rgb(134 239 172)",
-            color: "black",
-            padding: ".8rem 2rem",
-            marginTop: "2rem",
-            "&.MuiButtonBase-root": {
-              "&:hover, &.Mui-focusVisible": {
+            backgroundColor: 'rgb(134 239 172)',
+            color: 'black',
+            padding: '.8rem 2rem',
+            marginTop: '2rem',
+            '&.MuiButtonBase-root': {
+              '&:hover, &.Mui-focusVisible': {
                 boxShadow: `0px 0px 0px 2px rgba(0,0,0,.3)`,
-                backgroundColor: "rgb(134 239 172)",
+                backgroundColor: 'rgb(134 239 172)',
               },
             },
           }}

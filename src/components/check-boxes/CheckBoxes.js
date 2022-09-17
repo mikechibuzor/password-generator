@@ -1,7 +1,7 @@
-import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import { PropTypes } from "prop-types";
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
+import { PropTypes } from 'prop-types';
 
 const CheckBoxes = ({
   setPasswordStrengthCounter,
@@ -24,9 +24,9 @@ const CheckBoxes = ({
             <Checkbox
               onChange={toggleCheckbox}
               sx={{
-                color: "rgb(209 213 219)",
-                "&.Mui-checked": {
-                  color: "rgb(134 239 172)",
+                color: 'rgb(209 213 219)',
+                '&.Mui-checked': {
+                  color: 'rgb(134 239 172)',
                 },
               }}
             />
@@ -38,9 +38,9 @@ const CheckBoxes = ({
             <Checkbox
               onChange={toggleCheckbox}
               sx={{
-                color: "rgb(209 213 219)",
-                "&.Mui-checked": {
-                  color: "rgb(134 239 172)",
+                color: 'rgb(209 213 219)',
+                '&.Mui-checked': {
+                  color: 'rgb(134 239 172)',
                 },
               }}
             />
@@ -52,9 +52,9 @@ const CheckBoxes = ({
             <Checkbox
               onChange={toggleCheckbox}
               sx={{
-                color: "rgb(209 213 219)",
-                "&.Mui-checked": {
-                  color: "rgb(134 239 172)",
+                color: 'rgb(209 213 219)',
+                '&.Mui-checked': {
+                  color: 'rgb(134 239 172)',
                 },
               }}
             />
@@ -66,9 +66,9 @@ const CheckBoxes = ({
             <Checkbox
               onChange={toggleCheckbox}
               sx={{
-                color: "rgb(209 213 219)",
-                "&.Mui-checked": {
-                  color: "rgb(134 239 172)",
+                color: 'rgb(209 213 219)',
+                '&.Mui-checked': {
+                  color: 'rgb(134 239 172)',
                 },
               }}
             />
