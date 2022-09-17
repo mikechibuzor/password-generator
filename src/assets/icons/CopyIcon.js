@@ -7,7 +7,8 @@ const CopyIcon = (props) => {
       viewBox='0 0 24 24'
       strokeWidth={1.5}
       stroke={props.strokeColor}
-      className='w-6 h-6 cursor-pointer'>
+      className='w-6 h-6 cursor-pointer'
+    >
       <path
         strokeLinecap='round'
         strokeLinejoin='round'

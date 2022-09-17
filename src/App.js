@@ -1,5 +1,5 @@
 import PasswordGenerator from './components/PasswordGenerator'
-function App() {
+const App = () => {
   return <PasswordGenerator />
 }
 

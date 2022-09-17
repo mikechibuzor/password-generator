@@ -55,11 +55,12 @@ const GeneratePassword = () => {
             marginTop: '2rem',
             '&.MuiButtonBase-root': {
               '&:hover, &.Mui-focusVisible': {
-                boxShadow: `0px 0px 0px 2px rgba(0,0,0,.3)`,
+                boxShadow: '0px 0px 0px 2px rgba(0,0,0,.3)',
                 backgroundColor: 'rgb(134 239 172)'
               }
             }
-          }}>
+          }}
+        >
           <span>GENERATE</span>
           <ArrowRight />
         </LoadingButton>

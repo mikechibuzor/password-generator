@@ -10,7 +10,8 @@ const PasswordStrength = ({ passwordStrengthCounter }) => {
               key={item}
               className={`border px-1 py-3  ${
                 index <= passwordStrengthCounter ? 'bg-yellow-600' : ''
-              }`}></div>
+              }`}
+            ></div>
           ))}
         </div>
       </div>
