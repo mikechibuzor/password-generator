@@ -29,10 +29,10 @@ const GeneratePassword = () => {
   return (
     <>
       <CopyPassword generatedPassword={generatedPassword} />
-      <div className="flex flex-col items-center justify-between w-10/12 md:w-7/12 lg:w-4/12 px-5 py-4  bg-gray-800 shadow-md">
-        <p className="flex items-center justify-between w-full">
-          <span className="text-sm font-bold text-gray-300">Character Length</span>
-          <span className="text-green-300 text-3xl font-semibold">{characterLength || 0}</span>
+      <div className='flex flex-col items-center justify-between w-10/12 md:w-7/12 lg:w-4/12 px-5 py-4  bg-gray-800 shadow-md'>
+        <p className='flex items-center justify-between w-full'>
+          <span className='text-sm font-bold text-gray-300'>Character Length</span>
+          <span className='text-green-300 text-3xl font-semibold'>{characterLength || 0}</span>
         </p>
         <SliderProgress
           setCharacterLength={setCharacterLength}
@@ -44,10 +44,10 @@ const GeneratePassword = () => {
         />
         <PasswordStrength passwordStrengthCounter={passwordStrengthCounter} />
         <LoadingButton
-          variant="outlined"
+          variant='outlined'
           loading={isLoading}
           onClick={generateHandler}
-          className="flex items-center justify-center gap-x-3 bg-green-300 px-4 py-4 w-full mt-10 font-semibold"
+          className='flex items-center justify-center gap-x-3 bg-green-300 px-4 py-4 w-full mt-10 font-semibold'
           sx={{
             backgroundColor: 'rgb(134 239 172)',
             color: 'black',
@@ -56,9 +56,9 @@ const GeneratePassword = () => {
             '&.MuiButtonBase-root': {
               '&:hover, &.Mui-focusVisible': {
                 boxShadow: `0px 0px 0px 2px rgba(0,0,0,.3)`,
-                backgroundColor: 'rgb(134 239 172)',
-              },
-            },
+                backgroundColor: 'rgb(134 239 172)'
+              }
+            }
           }}>
           <span>GENERATE</span>
           <ArrowRight />

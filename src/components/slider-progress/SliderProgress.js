@@ -4,21 +4,21 @@ import { useState } from 'react'
 import { PropTypes } from 'prop-types'
 
 const ProgressSlider = styled(Slider, {
-  shouldForwardProp: (prop) => prop !== 'colorClass',
+  shouldForwardProp: (prop) => prop !== 'colorClass'
 })(({ colorClass, theme }) => ({
   color: colorClass ? 'rgb(134 239 173)' : 'white',
   '& .MuiSlider-rail': {
-    color: 'rgb(0,0,0)',
+    color: 'rgb(0,0,0)'
   },
   '& .MuiSlider-thumb': {
     '&:hover, &.Mui-focusVisible': {
-      boxShadow: `0px 0px 0px 8px ${alpha(theme.palette.success.main, 0.16)}`,
+      boxShadow: `0px 0px 0px 8px ${alpha(theme.palette.success.main, 0.16)}`
     },
     '&.Mui-active': {
       boxShadow: `0px 0px 0px 1px rgb(134 239 172) `,
-      color: 'black',
-    },
-  },
+      color: 'black'
+    }
+  }
 }))
 
 const SliderProgress = ({ setCharacterLength, defaultValue }) => {
@@ -28,9 +28,9 @@ const SliderProgress = ({ setCharacterLength, defaultValue }) => {
     setCharacterLength(newVal)
   }
   return (
-    <div className="w-full px-2 mt-2">
+    <div className='w-full px-2 mt-2'>
       <ProgressSlider
-        aria-label="Character Length"
+        aria-label='Character Length'
         defaultValue={defaultValue}
         onChange={handleChange}
         colorClass={newVal}
@@ -40,6 +40,6 @@ const SliderProgress = ({ setCharacterLength, defaultValue }) => {
 }
 SliderProgress.propTypes = {
   setCharacterLength: PropTypes.number,
-  defaultValue: PropTypes.number,
+  defaultValue: PropTypes.number
 }
 export default SliderProgress

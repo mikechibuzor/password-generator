@@ -23,12 +23,14 @@
             "error",
             {
               "singleQuote": true,
+              "jsxSingleQuote": true,
               "parser": "flow",
               "semi": false,
               "tabWidth": 2,
               "printWidth": 100,
-              "trailingComma": "es5",
-              "jsxBracketSameLine": true
+              "trailingComma": "none",
+              "jsxBracketSameLine": true,
+              "space-before-function-paren": "always"
             }
           ]
       }
