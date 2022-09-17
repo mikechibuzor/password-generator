@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { PropTypes } from 'prop-types'
 const PasswordStrength = ({ passwordStrengthCounter }) => {
   return (
@@ -11,7 +12,8 @@ const PasswordStrength = ({ passwordStrengthCounter }) => {
               className={`border px-1 py-3  ${
                 index <= passwordStrengthCounter ? 'bg-yellow-600' : ''
               }`}
-            ></div>
+            >
+            </div>
           ))}
         </div>
       </div>
