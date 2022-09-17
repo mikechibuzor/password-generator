@@ -15,7 +15,7 @@ const ProgressSlider = styled(Slider, {
       boxShadow: `0px 0px 0px 8px ${alpha(theme.palette.success.main, 0.16)}`
     },
     '&.Mui-active': {
-      boxShadow: `0px 0px 0px 1px rgb(134 239 172) `,
+      boxShadow: '0px 0px 0px 1px rgb(134 239 172)',
       color: 'black'
     }
   }
