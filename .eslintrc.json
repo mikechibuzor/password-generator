@@ -33,5 +33,10 @@
               "space-before-function-paren": "always"
             }
           ]
-      }
+    },
+    "settings": {
+        "react": {
+          "version": "detect"
+        }
+    }
 }
