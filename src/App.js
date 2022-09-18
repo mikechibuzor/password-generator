@@ -1,8 +1,6 @@
-import PasswordGenerator from "./components/PasswordGenerator";
-function App() {
-  return (
-    <PasswordGenerator />
-  );
+import PasswordGenerator from './components/PasswordGenerator'
+const App = () => {
+  return <PasswordGenerator />
 }
 
-export default App;
+export default App

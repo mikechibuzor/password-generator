@@ -16,6 +16,6 @@ const ArrowRight = () => {
         />
       </svg>
     </>
-  );
-};
-export default ArrowRight;
+  )
+}
+export default ArrowRight
