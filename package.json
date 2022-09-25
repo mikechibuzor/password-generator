@@ -23,13 +23,25 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "standard": "standard",
+    "standard::fix": "standard --fix",
+    "test:standard": "standard"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "standard": {
+      "ignore": [
+        "**/out/",
+        "/lib/select2/",
+        "/lib/ckeditor/",
+        "tmp.js",
+        "/src/components/password-strength/PasswordStrength.js"
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -47,6 +59,7 @@
     "autoprefixer": "^10.4.8",
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.5",
     "eslint-plugin-prettier": "^4.2.1",
